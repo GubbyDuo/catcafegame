@@ -1,0 +1,41 @@
+<html>
+    <script>
+        function makeCoffee() {
+            var coffeeCountSegment = document.getElementById("coffeesMade");
+            var coffeeCount = coffeeCountSegment.innerHTML;
+            coffeeCount++;
+            coffeeCountSegment.innerHTML = coffeeCount;
+        }
+    </script>
+    <body>
+        <div
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            "
+        >
+            <div>
+                <h1>Cat cafe</h1>
+            </div>
+            <div
+                style="
+                    font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+                        'Liberation Mono', 'Courier New', monospace;
+                "
+            >
+                <p style="margin: 0px">&nbsp;/\_/\</p>
+                <p style="margin: 0px">( o.o )</p>
+                <p style="margin: 0px">&nbsp;> ^ <</p>
+            </div>
+            <div style="flex-direction: row">
+                Coffees made:
+                <p style="display: inline" id="coffeesMade">0</p>
+            </div>
+            <div>
+                <button onclick="makeCoffee()">Make coffee</button>
+            </div>
+        </div>
+    </body>
+</html>
